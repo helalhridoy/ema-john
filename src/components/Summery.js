@@ -1,0 +1,20 @@
+import React from 'react'
+
+function Summery({ products, priceSummery }) {
+
+    return (
+        <div id="orderSummery">
+            <h3>Order Summery</h3>
+            <br />
+            <p>Items ordered:{products.length}</p>
+            <span>Items Price: {priceSummery.price}</span>
+            <span>Shipping & Handling:	{priceSummery.shipping}</span>
+            <span>Total before tax:	{priceSummery.total}</span>
+            <span>Estimated Tax:	{priceSummery.tax}</span>
+            <strong>Order Total:	{priceSummery.grandTotal}</strong>
+            <button className='yButton'>Review your order </button>
+        </div>
+    )
+}
+
+export default Summery
