@@ -1,12 +1,13 @@
 import React from 'react'
 
-function Summery({ products, priceSummery }) {
+function Summery({ cartList, products, priceSummery }) {
 
     return (
         <div id="orderSummery">
             <h3>Order Summery</h3>
             <br />
-            <p>Items ordered:{products.length}</p>
+            <p>Items ordered:{cartList.length}</p>
+            <p>Total Quantity: {products.length}</p>
             <span>Items Price: {priceSummery.price}</span>
             <span>Shipping & Handling:	{priceSummery.shipping}</span>
             <span>Total before tax:	{priceSummery.total}</span>

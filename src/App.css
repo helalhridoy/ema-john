@@ -17,6 +17,7 @@ nav {
   justify-content: center;
 }
 #navList {
+  display: flex;
   padding-left: 50px;
   background-color: black;
   height: 40px;
@@ -125,4 +126,28 @@ nav {
 }
 #itemDetails h2:nth-child(1) {
   color: blue;
+}
+#login {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+}
+#login img {
+  margin: 0 5px;
+  height: 40px;
+  border-radius: 50%;
+}
+#login p {
+  margin: 0 5px;
+}
+#login button {
+  margin: 0 5px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: aliceblue;
+  height: fit-content;
 }
